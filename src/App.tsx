@@ -1,4 +1,9 @@
 import React from 'react';
+import { Header } from './components/Header/Header';
+import { Hero } from './components/Hero/Hero';
+import { Features } from './components/Features/Features';
+import { Screenshots } from './components/Screenshots/Screenshots';
+import { Footer } from './components/Footer/Footer';
 
 // function App() {
 //   return (
@@ -20,4 +25,15 @@ import React from 'react';
 //   );
 // }
 
-// export default App;
+function App() {
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Features />
+      <Screenshots />
+      <Footer />
+    </>
+  );
+}
+export default App;

@@ -1,0 +1,21 @@
+.features {
+  padding: 40px 20px;
+  background: #fff;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0 0;
+}
+.list li {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+  padding-left: 16px;
+  position: relative;
+}
+.list li::before {
+  content: "✔";
+  color: #0078d7;
+  position: absolute;
+  left: 0;
+}

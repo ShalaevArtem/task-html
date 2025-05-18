@@ -1,0 +1,21 @@
+.screenshots {
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+.images {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 24px;
+}
+.imagePlaceholder {
+  width: 220px;
+  height: 140px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  border-radius: 8px;
+  font-size: 1em;
+}
