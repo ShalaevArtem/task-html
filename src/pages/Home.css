@@ -1,0 +1,95 @@
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 48px 0 32px 0;
+  text-align: center;
+}
+
+.hot-artists-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 48px 0;
+  flex-wrap: wrap;
+}
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.artist-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+  margin-bottom: 12px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 4px #0002;
+}
+
+.artist-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.artist-meta {
+  color: #888;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 32px 0 16px 0;
+  text-align: left;
+  border-bottom: 2px solid #e41a1a;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.popular-tracks-lists {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.tracks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 220px;
+}
+
+.track-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.track-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #eee;
+  margin-right: 12px;
+}
+
+.track-title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.track-meta {
+  color: #888;
+  font-size: 0.9rem;
+}
