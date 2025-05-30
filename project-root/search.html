@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024, initial-scale=1.0" />
+  <title>Last.fm mini — Поиск</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar__logo">last.fm</div>
+    <nav class="topbar__nav">
+      <a href="#">Home</a>
+      <a href="#">Live</a>
+      <a href="#">Music</a>
+      <a href="#">Charts</a>
+      <a href="#">Events</a>
+      <a href="#">Features</a>
+      <div class="topbar__profile"></div>
+    </nav>
+  </div>
+  <main class="main">
+    <h1 class="search-title">Search results for "<span id="search-query-label">never gonna give you up</span>"</h1>
+    <div class="search-tabs">
+      <a href="#" class="tab active">Top Results</a>
+      <a href="#" class="tab">Artists</a>
+      <a href="#" class="tab">Albums</a>
+      <a href="#" class="tab">Tracks</a>
+    </div>
+    <form class="search-form">
+      <input type="text" class="search-input" placeholder="never gonna give you up" value="never gonna give you up" />
+      <button type="submit" class="search-btn">🔍</button>
+    </form>
+    <section class="search-artists-section">
+      <h2 class="section-title">Artists</h2>
+      <ul class="search-artists-list"></ul>
+      <a href="#" class="more-link">More artists &gt;</a>
+    </section>
+    <section class="search-albums-section">
+      <h2 class="section-title">Albums</h2>
+      <ul class="search-albums-list"></ul>
+      <a href="#" class="more-link">More albums &gt;</a>
+    </section>
+    <section class="search-tracks-section">
+      <h2 class="section-title">Tracks</h2>
+      <table class="tracks-table"></table>
+      <a href="#" class="more-link">More tracks &gt;</a>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <b>Company</b><br>
+        About Last.fm<br>
+        Contact Us<br>
+        Jobs
+      </div>
+      <div>
+        <b>Help</b><br>
+        Track My Music<br>
+        Community Support<br>
+        Community Guidelines<br>
+        Help
+      </div>
+      <div>
+        <b>Goodies</b><br>
+        Download Scrobbler<br>
+        Developer API<br>
+        Free Music Downloads<br>
+        Merchandise
+      </div>
+      <div>
+        <b>Account</b><br>
+        Inbox<br>
+        Settings<br>
+        Last.fm Pro<br>
+        Logout
+      </div>
+      <div>
+        <b>Follow Us</b><br>
+        Facebook<br>
+        Twitter<br>
+        Instagram<br>
+        YouTube
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>English ... Time zone: Europe/Moscow</div>
+      <div>&copy; 2025 Last.fm mini. Дипломный проект.</div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

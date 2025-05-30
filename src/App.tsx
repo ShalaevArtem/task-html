@@ -1,23 +1,27 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Search from "./pages/Search";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+/**
+ * Корневой компонент приложения.
+ * Организует роутинг между главной страницей и страницей поиска,
+ * а также отображает общий Header и Footer для всех страниц.
+ *
+ * @component
+ * @returns {JSX.Element} Приложение с навигацией и основными разделами.
+ */
+const App: React.FC = () => (
+  <BrowserRouter>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/search" element={<Search />} />
+    </Routes>
+    <Footer />
+  </BrowserRouter>
+);
 
-// export default App;
+export default App;

@@ -1,0 +1,153 @@
+.search-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 40px 0 24px 0;
+  text-align: left;
+}
+
+.search-tabs {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.tab {
+  color: #888;
+  text-decoration: none;
+  padding: 2px 8px 5px 8px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.tab.active {
+  color: #e41a1a;
+  border-bottom: 2px solid #e41a1a;
+}
+
+.search-form {
+  margin-bottom: 32px;
+  position: relative;
+  max-width: 500px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 48px 12px 16px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 1px 3px #0001;
+  outline: none;
+}
+
+.search-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  color: #888;
+  cursor: pointer;
+}
+
+.search-artists-list,
+.search-albums-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  min-height: 220px;
+}
+
+.artist-card, .album-card {
+  background: #ededed;
+  border-radius: 6px;
+  padding: 16px 10px 12px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 80px;
+  box-shadow: 0 1px 2px #0001;
+}
+
+.artist-img, .album-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.artist-name, .album-title {
+  font-weight: 600;
+  font-size: 1.02rem;
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.artist-meta, .album-meta {
+  color: #888;
+  font-size: 0.92rem;
+  text-align: left;
+}
+
+.more-link {
+  display: block;
+  text-align: right;
+  color: #888;
+  text-decoration: none;
+  margin: 0 0 24px 0;
+  font-size: 0.98rem;
+  border-bottom: 1px solid #bbb;
+  width: fit-content;
+  margin-left: auto;
+  transition: color 0.2s;
+}
+.more-link:hover {
+  color: #e41a1a;
+  border-bottom: 1px solid #e41a1a;
+}
+
+.tracks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.tracks-table td {
+  padding: 8px 10px;
+  font-size: 1rem;
+  color: #222;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+}
+
+.tracks-table td:first-child {
+  width: 32px;
+  text-align: center;
+  color: #e41a1a;
+  font-size: 1.2em;
+}
+
+.tab,
+.more-link,
+.topbar__nav-btn {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+  padding: 0;
+}
+.tab.active {
+  font-weight: bold;
+  text-decoration: none;
+}
